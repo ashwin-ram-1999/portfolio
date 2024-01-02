@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+html {
+  background-color: rgba(36, 36, 36, 0.993);
+  background-size: "cover";
+  background-repeat: no-repeat;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #4eabf7;
+}
