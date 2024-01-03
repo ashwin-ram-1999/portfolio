@@ -17,7 +17,7 @@ function EmailMe() {
   });
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement>,
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>,
     inp: keyof EmailData
   ) => {
     setEmailData({ ...emailData, [inp]: e.target.value });
@@ -44,7 +44,7 @@ function EmailMe() {
                   </label>
                   <input
                     name={inp}
-                    onChange={(e) => handleChange(e, inp)}
+                    onChange={(e) => handleChange(e, inp as keyof EmailData)}
                     className="border-2 border-solid border-gray-300 m-4 rounded h-10"
                     key={inp}
                   />
@@ -56,7 +56,7 @@ function EmailMe() {
           <textarea
             name="body"
             value={emailData.body}
-            onChange={(e) => handleChange(e, e.target.name)}
+            onChange={(e) => handleChange(e, e.target.name as keyof EmailData)}
             className="border-2 border-solid border-gray-300 m-4 rounded-md"
             style={{ padding: "0 0 400px 0", wordBreak: "break-word" }}
           />
