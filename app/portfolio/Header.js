@@ -5,7 +5,7 @@ const Header = () => {
     <div>
       <ul className="flex">
         <li className="flex-1 mr-2">
-          <Link href="/my-portfolio">
+          <Link href="/">
             <div className="text-center block border border-gray-200 rounded hover:border-gray-200 text-gray-300 hover:bg-gray-200 py-2 px-4">
               Home
             </div>
@@ -17,7 +17,7 @@ const Header = () => {
           </div>
         </li>
         <li className="text-center flex-1">
-          <Link href="/my-portfolio/contact">
+          <Link href="/portfolio/contact">
             <div className="text-center block border border-gray-200 rounded hover:border-gray-200 text-gray-300 hover:bg-gray-200 py-2 px-4">
               Contact Me!
             </div>
