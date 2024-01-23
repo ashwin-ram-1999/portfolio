@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import React, { useState } from "react";
-import Layout from "./Layout";
+import Layout from "../layout/Layout";
 
 function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -29,11 +29,24 @@ function Home() {
           </div>
           <div className="ml-3 text-gray-700 text-xs text-gray-300">
             Toggle for
-            {darkMode ? <div> Light Mode</div> : <div> Dark Mode</div>}
+            {darkMode ? <div>Light Mode</div> : <div> Dark Mode</div>}
           </div>
         </label>
       </div>
-      <Layout><div className="text-gray-300">SAMPLE TEXT</div></Layout>
+      <Layout>
+        <div className="flex justify-center">
+          <div className="text-gray-300 text-2xl m-4 w-3/4">
+            Hi! I am Ashwin Ram. As a Full Stack Developer, I develop, test, and
+            deploy web applications using Java, Spring Boot and ReactJs. I work
+            with a team of 5 developers and QA engineers to deliver high-quality
+            software solutions for clients in various domains, such as banking,
+            healthcare, and education. I am passionate about learning new
+            technologies and applying them to real-world problems. My goal is to
+            become a proficient and innovative full stack developer who can
+            create impactful and user-friendly applications.
+          </div>
+        </div>
+      </Layout>
     </div>
   );
 }
