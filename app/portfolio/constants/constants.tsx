@@ -85,6 +85,10 @@ export const resumeDownload = () => {
   );
 };
 
+export const LINKEDIN_LINK = `https://www.linkedin.com/in/ashwin-ram-605123197/`;
+
+export const GITHUB_LINK = `https://github.com/ashwin-ram-1999/`;
+
 export const INTRODUCTION_TEXT = `Hi! I am Ashwin Ram. As a Full Stack Developer, I develop, test, and
             deploy web applications using Java, Spring Boot and ReactJs. I work
             with a team of 5 developers and QA engineers to deliver high-quality
