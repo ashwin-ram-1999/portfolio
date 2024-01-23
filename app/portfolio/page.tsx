@@ -1,6 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Layout from "../layout/Layout";
+import {
+  linkedInIcon,
+  gitHubIcon,
+  resumeDownload,
+  INTRODUCTION_TEXT,
+} from "./constants/constants";
 
 function Home() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -34,17 +40,22 @@ function Home() {
         </label>
       </div>
       <Layout>
-        <div className="flex justify-center">
-          <div className="text-gray-300 text-2xl m-4 w-3/4">
-            Hi! I am Ashwin Ram. As a Full Stack Developer, I develop, test, and
-            deploy web applications using Java, Spring Boot and ReactJs. I work
-            with a team of 5 developers and QA engineers to deliver high-quality
-            software solutions for clients in various domains, such as banking,
-            healthcare, and education. I am passionate about learning new
-            technologies and applying them to real-world problems. My goal is to
-            become a proficient and innovative full stack developer who can
-            create impactful and user-friendly applications.
+        <div className="flex flex-col items-center justify-center ">
+          <div className="text-gray-300 text-2xl m-4 w-3/4 my-6">
+            {INTRODUCTION_TEXT}
           </div>
+          <div className="text-blue-300 text-4xl my-6 text-center">
+            CHECK ME OUT ON
+          </div>
+          <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
+            LinkedIn
+            {linkedInIcon()}
+          </div>
+          <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
+            GitHub
+            {gitHubIcon()}
+          </div>
+          <div className="bottom-4 absolute my-4">{resumeDownload()}</div>
         </div>
       </Layout>
     </div>
