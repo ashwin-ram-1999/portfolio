@@ -7,37 +7,13 @@ import {
   resumeDownload,
   INTRODUCTION_TEXT,
 } from "./constants/constants";
+import "./portfolio.css";
 
 function Home() {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
-
   return (
     <div>
       <div className="flex align-center justify-between">
-        <h1 className="font-sans text-5xl m-10 text-gray-200">My Portfolio</h1>
-        <label
-          htmlFor="toggleB"
-          className="flex items-center cursor-pointer mr-5"
-        >
-          <div className="relative">
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={() => {
-                console.log(darkMode);
-                setDarkMode(!darkMode);
-              }}
-              id="toggleB"
-              className="sr-only"
-            />
-            <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
-            <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-          </div>
-          <div className="ml-3 text-gray-700 text-xs text-gray-300">
-            Toggle for
-            {darkMode ? <div>Light Mode</div> : <div> Dark Mode</div>}
-          </div>
-        </label>
+        <h1 className="font-sans text-5xl m-10 text-gray-200">Ashwin Ram</h1>
       </div>
       <Layout>
         <div className="flex flex-col items-center justify-center ">
@@ -48,14 +24,20 @@ function Home() {
             CHECK ME OUT ON
           </div>
           <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
-            LinkedIn
-            {linkedInIcon()}
+            <a
+              href="https://in.linkedin.com/in/ashwin-ram-605123197"
+              target="_blank"
+            >
+              <span className="text-4xl items-center justify-center text-center">
+                LinkedIn
+              </span>
+              {linkedInIcon()}
+            </a>
           </div>
           <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
             GitHub
             {gitHubIcon()}
           </div>
-          <div className="bottom-4 absolute my-4">{resumeDownload()}</div>
         </div>
       </Layout>
     </div>
