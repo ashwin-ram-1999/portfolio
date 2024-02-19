@@ -1,12 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../layout/Layout";
-import {
-  linkedInIcon,
-  gitHubIcon,
-  resumeDownload,
-  INTRODUCTION_TEXT,
-} from "./constants/constants";
+import { INTRODUCTION_TEXT, MY_SOCIALS } from "./constants/constants";
 import "./portfolio.css";
 
 function Home() {
@@ -23,21 +18,7 @@ function Home() {
           <div className="text-blue-300 text-4xl my-6 text-center">
             CHECK ME OUT ON
           </div>
-          <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
-            <a
-              href="https://in.linkedin.com/in/ashwin-ram-605123197"
-              target="_blank"
-            >
-              <span className="text-4xl items-center justify-center text-center">
-                LinkedIn
-              </span>
-              {linkedInIcon()}
-            </a>
-          </div>
-          <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
-            GitHub
-            {gitHubIcon()}
-          </div>
+          {MY_SOCIALS}
         </div>
       </Layout>
     </div>
