@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import {
@@ -7,28 +8,37 @@ import {
   gitHubIcon,
 } from "../portfolio/constants/constants";
 import Layout from "../layout/Layout";
+import { Card } from "antd";
 
 function Home() {
+  const { Meta } = Card;
+
   return (
     <Layout>
-      <div className="text-blue-300 text-4xl my-6 text-center">
-        CHECK ME OUT ON
+      <div className="text-zinc-50 text-4xl text-center my-7">
+        Check Me Out On
       </div>
-      <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
-        <Link href={LINKEDIN_LINK} target="_blank">
-          <span className="text-4xl items-center justify-center text-center">
-            LinkedIn
-          </span>
-          {linkedInIcon}
-        </Link>
-      </div>
-      <div className="text-center block border border-gray-200 rounded text-gray-300 py-2 px-4 w-1/3">
-        <Link href={GITHUB_LINK} target="_blank">
-          <span className="text-4xl items-center justify-center text-center">
-            GitHub
-          </span>
-          {gitHubIcon}
-        </Link>
+      <div className="flex justify-center space-x-96 my-7">
+        <Card
+          hoverable
+          style={{ width: 240 }}
+          cover={linkedInIcon}
+          className="bg-slate-600 "
+        >
+          <Link href={LINKEDIN_LINK} target="_blank">
+            <Meta title="LinkedIn" description="www.linkedin.com" />
+          </Link>
+        </Card>
+        <Card
+          hoverable
+          style={{ width: 240 }}
+          cover={gitHubIcon}
+          className="bg-slate-600 "
+        >
+          <Link href={GITHUB_LINK} target="_blank">
+            <Meta title="GitHub" description="www.github.com" />
+          </Link>
+        </Card>
       </div>
     </Layout>
   );
