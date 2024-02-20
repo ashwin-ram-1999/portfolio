@@ -19,26 +19,26 @@ function Home() {
         Check Me Out On
       </div>
       <div className="flex justify-center space-x-96 my-7">
-        <Card
-          hoverable
-          style={{ width: 240 }}
-          cover={linkedInIcon}
-          className="bg-slate-600 "
-        >
-          <Link href={LINKEDIN_LINK} target="_blank">
+        <Link href={LINKEDIN_LINK} target="_blank">
+          <Card
+            hoverable
+            style={{ width: 340 }}
+            cover={linkedInIcon}
+            className="bg-slate-600 "
+          >
             <Meta title="LinkedIn" description="www.linkedin.com" />
-          </Link>
-        </Card>
-        <Card
-          hoverable
-          style={{ width: 240 }}
-          cover={gitHubIcon}
-          className="bg-slate-600 "
-        >
-          <Link href={GITHUB_LINK} target="_blank">
+          </Card>
+        </Link>
+        <Link href={GITHUB_LINK} target="_blank">
+          <Card
+            hoverable
+            style={{ width: 340 }}
+            cover={gitHubIcon}
+            className="bg-slate-600 "
+          >
             <Meta title="GitHub" description="www.github.com" />
-          </Link>
-        </Card>
+          </Card>
+        </Link>
       </div>
     </Layout>
   );
