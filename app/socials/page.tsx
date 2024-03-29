@@ -7,14 +7,13 @@ import {
   GITHUB_LINK,
   gitHubIcon,
 } from "../portfolio/constants/constants";
-import Layout from "../layout/Layout";
 import { Card } from "antd";
 
 function Home() {
   const { Meta } = Card;
 
   return (
-    <Layout>
+    <>
       <div className="text-zinc-50 text-4xl text-center my-7">
         Check Me Out On
       </div>
@@ -40,7 +39,7 @@ function Home() {
           </Card>
         </Link>
       </div>
-    </Layout>
+    </>
   );
 }
 

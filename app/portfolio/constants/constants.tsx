@@ -63,11 +63,7 @@ export const gitHubIcon: ReactNode = (
 );
 
 export const resumeDownload: ReactNode = (
-  <a
-    href="https://drive.google.com/file/d/1-5ga0ZEbEqFI0q5mTB8r283zAvoaAKw_/view?usp=sharing"
-    target="_blank"
-    download
-  >
+  <a href="https://flowcv.com/resume/e530o9kef5" target="_blank" download>
     <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 my-4 rounded inline-flex items-center">
       <svg
         className="fill-current w-4 h-4 mr-2"
@@ -105,11 +101,15 @@ export const MY_SOCIALS: ReactNode = (
   </>
 );
 
-export const INTRODUCTION_TEXT: string = `Hi! I am Ashwin Ram. As a Full Stack Developer, I develop, test, and
-            deploy web applications using Java, Spring Boot and ReactJs. I work
-            with a team of 5 developers and QA engineers to deliver high-quality
-            software solutions for clients in various domains, such as banking,
-            healthcare, and education. I am passionate about learning new
-            technologies and applying them to real-world problems. My goal is to
-            become a proficient and innovative full stack developer who can
-            create impactful and user-friendly applications.`;
+export const INTRODUCTION_HEAD: string = `Explore my work and let's build something amazing together!`;
+export const INTRODUCTION_TEXT: string = `Hi there! I am Ashwin and I'm a passionate full-stack developer with 2 years of experience in the banking and financial sector. I leverage my expertise in ReactJS and Java to craft efficient and secure web applications. As an integral part of a 5-person team, I collaborate effectively to deliver high-impact projects that meet client needs and industry standards.`;
+
+export const SKILLS_IMAGES: object = {
+  React: "https://shethink.in/wp-content/uploads/2021/07/react.js-img.png",
+  "Node.JS":
+    "https://media.dev.to/cdn-cgi/image/width=1600,height=900,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F4anecy5mdl4pho8w7519.jpg",
+  JAVA: "https://cdn.wallpapersafari.com/89/85/2rZciQ.png",
+  HTML5:
+    "https://c4.wallpaperflare.com/wallpaper/453/129/282/html5-hyper-text-markup-language-html-wallpaper-thumb.jpg",
+  CSS3: "https://images7.webydo.com/90/9098746/3958/46d2d005-1b02-4961-aa1d-0aba7f7209bd.jpg",
+};

@@ -1,20 +1,48 @@
+"use client";
 import React from "react";
-import Layout from "./layout/Layout";
-import { INTRODUCTION_TEXT } from "./portfolio/constants/constants";
+import { Layout, Flex, Button } from "antd";
+import {
+  headerStyle,
+  footerStyle,
+  downloadButtonStyle,
+} from "./portfolio/styles/styles";
+import Intro from "./portfolio/components/intro";
+import Projects from "./portfolio/components/projects";
+import { DownloadOutlined } from "@ant-design/icons";
 
-function Home() {
-  return (
+const { Header, Footer, Content } = Layout;
+
+const App: React.FC = () => (
+  <Flex gap="middle">
     <Layout>
-      <div className="flex flex-col items-center justify-center ">
-        <div className="text-gray-300 text-2xl m-4 w-3/4 my-6">
-          {INTRODUCTION_TEXT}
-        </div>
-        <div className="text-blue-300 text-4xl my-6 text-center">
-          My Experience
-        </div>
-      </div>
+      <Header style={headerStyle}>
+        Welcome to my Digital Canvas
+        <a
+          href="https://flowcv.com/resume/e530o9kef5"
+          download="Ashwin's Resume"
+          target="_blank"
+          className="flex items-center"
+        >
+          <Button
+            type="primary"
+            icon={<DownloadOutlined />}
+            size={"middle"}
+            style={downloadButtonStyle}
+          >
+            Download My Resume!
+          </Button>
+        </a>
+      </Header>
+      <Content>
+        <Intro />
+        <Projects />
+      </Content>
+      <Footer style={footerStyle}>
+        Footer <br />
+        Social 1, Social 2
+      </Footer>
     </Layout>
-  );
-}
+  </Flex>
+);
 
-export default Home;
+export default App;
