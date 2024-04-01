@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
 import { Layout, Flex, Button } from "antd";
-import {
-  headerStyle,
-  footerStyle,
-  downloadButtonStyle,
-} from "./portfolio/styles/styles";
+import { headerStyle, footerStyle } from "./portfolio/styles/styles";
 import Intro from "./portfolio/components/intro";
 import Projects from "./portfolio/components/projects";
 import { DownloadOutlined } from "@ant-design/icons";
+import Skills from "./portfolio/components/skills";
 
 const { Header, Footer, Content } = Layout;
 
@@ -17,30 +14,24 @@ const App: React.FC = () => (
     <Layout>
       <Header style={headerStyle}>
         Welcome to my Digital Canvas
-        <a
-          href="https://flowcv.com/resume/e530o9kef5"
-          download="Ashwin's Resume"
-          target="_blank"
-          className="flex items-center"
-        >
+        <div className="flex items-center justify-center">
           <Button
-            type="primary"
+            type="default"
             icon={<DownloadOutlined />}
             size={"middle"}
-            style={downloadButtonStyle}
+            target="_blank"
+            href="https://flowcv.com/resume/e530o9kef5"
           >
             Download My Resume!
           </Button>
-        </a>
+        </div>
       </Header>
       <Content>
         <Intro />
+        <Skills />
         <Projects />
       </Content>
-      <Footer style={footerStyle}>
-        Footer <br />
-        Social 1, Social 2
-      </Footer>
+      <Footer style={footerStyle}></Footer>
     </Layout>
   </Flex>
 );

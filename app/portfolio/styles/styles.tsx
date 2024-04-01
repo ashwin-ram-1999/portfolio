@@ -16,7 +16,7 @@ export const headerStyle: React.CSSProperties = {
 
 export const contentStyle: React.CSSProperties = {
   textAlign: "center",
-  minHeight: "100vh",
+  minHeight: "10vh",
   lineHeight: 1.6,
   color: "#000000",
   backgroundColor: "#D2E9E9",
@@ -29,10 +29,4 @@ export const footerStyle: React.CSSProperties = {
   color: "#000000",
   backgroundColor: "#E3F4F4",
   fontSize: "20px",
-};
-
-export const downloadButtonStyle: React.CSSProperties = {
-  color: "#000000",
-  backgroundImage: "linear-gradient(to bottom right, #E3F4F4, #D2E9E9)",
-  borderColor: "#365486",
 };

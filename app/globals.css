@@ -21,10 +21,30 @@ html {
   background-size: "cover";
   background-repeat: no-repeat;
 }
+
 img {
   float: left;
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover;
-  margin: 0 auto;
+  width: 8rem;
+  height: 6.1rem;
+  object-fit: fill;
+  background-color: black;
+  padding: 0.3rem;
+}
+
+.antd-card {
+  width: 10rem;
+  height: 8rem;
+}
+
+.antd-col {
+  /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  .antd-card {
+    width: 8rem;
+    height: 8rem;
+  }
 }
