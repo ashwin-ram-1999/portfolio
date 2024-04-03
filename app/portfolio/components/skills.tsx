@@ -1,7 +1,7 @@
 "use client";
 import React, { ReactNode } from "react";
 import { Layout, Row, Col } from "antd";
-import { contentStyle } from "../styles/styles";
+import { contentStyle, skillsStyle } from "../styles/styles";
 import {
   SKILLS_BACKEND,
   SKILLS_FRONTEND,
@@ -9,13 +9,14 @@ import {
 } from "../constants/image-constants";
 import "../../globals.css";
 import { Card } from "antd";
+import { Flex } from "@/node_modules/antd/es/index";
 
 const { Content } = Layout;
 
 const skillsColumn: any = (title: string, skills: object) => (
   <Col span={8} className="antd-col">
-    <Row gutter={[8, 8]}>
-      <p className="items-center text-xl w-11/12 mt-1">{title}</p>
+    <Row gutter={[12, 16]}>
+      <p className="text-2xl w-11/12 mt-1">{title}</p>
       {Object.entries(skills).map(([key, value]) => {
         return (
           <Col span={8}>
@@ -24,7 +25,7 @@ const skillsColumn: any = (title: string, skills: object) => (
               className="antd-card"
               cover={<img alt={key} src={value} />}
             >
-              <p className="text-lg items-center">{key}</p>
+              <p className="text-base font-medium items-center">{key}</p>
             </Card>
           </Col>
         );
@@ -35,13 +36,18 @@ const skillsColumn: any = (title: string, skills: object) => (
 
 const Skills: React.FC = () => (
   <Layout>
-    <Content style={contentStyle}>
-      <Row className="flex justify-center">
-        <p className="text-2xl w-11/12">My Skills</p>
+    <Content style={skillsStyle}>
+      <p className="text-3xl">My Skills</p>
+      <Flex
+        gap="middle"
+        align="center"
+        justify="
+      center"
+      >
         {skillsColumn("Frontend", SKILLS_FRONTEND)}
         {skillsColumn("Backend", SKILLS_BACKEND)}
         {skillsColumn("Tools", SKILLS_TOOLS)}
-      </Row>
+      </Flex>
     </Content>
   </Layout>
 );

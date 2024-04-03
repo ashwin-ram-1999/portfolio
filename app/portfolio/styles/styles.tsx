@@ -4,7 +4,7 @@ export const headerStyle: React.CSSProperties = {
   backgroundColor: "#F8F6F4",
   position: "sticky",
   top: "0px",
-  fontSize: "30px",
+  fontSize: "2.5rem",
   zIndex: "999",
   justifyContent: "space-between",
   display: "flex",
@@ -21,6 +21,16 @@ export const contentStyle: React.CSSProperties = {
   color: "#000000",
   backgroundColor: "#D2E9E9",
   fontFamily: "Lato, sans-serif",
+};
+
+export const skillsStyle: React.CSSProperties = {
+  textAlign: "center",
+  minHeight: "10vh",
+  lineHeight: 1.6,
+  color: "#000000",
+  backgroundColor: "#D2E9E9",
+  fontFamily: "Lato, sans-serif",
+  padding: "1rem",
 };
 
 export const footerStyle: React.CSSProperties = {

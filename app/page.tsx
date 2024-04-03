@@ -13,7 +13,7 @@ const App: React.FC = () => (
   <Flex gap="middle">
     <Layout>
       <Header style={headerStyle}>
-        Welcome to my Digital Canvas
+        <h1 className="intro-head ">Welcome to my Digital Canvas</h1>
         <div className="flex items-center justify-center">
           <Button
             type="default"

@@ -16,10 +16,18 @@
   }
 } */
 
-html {
-  background-color: rgba(0, 18, 43, 0.993);
-  background-size: "cover";
-  background-repeat: no-repeat;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.intro-head {
+  font-weight: 600;
+  background-image: linear-gradient(45deg, #414141, #293d8d);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 img {
@@ -28,7 +36,7 @@ img {
   height: 6.1rem;
   object-fit: fill;
   background-color: black;
-  padding: 0.3rem;
+  padding: 0.4rem;
 }
 
 .antd-card {
@@ -37,12 +45,9 @@ img {
 }
 
 .antd-col {
-  /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
-
-  padding: 1rem;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1920px) {
   .antd-card {
     width: 8rem;
     height: 8rem;

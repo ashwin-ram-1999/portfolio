@@ -12,7 +12,9 @@ const Intro: React.FC = () => (
     <Content style={contentStyle}>
       <Row className="flex justify-center">
         <Col span={24}>
-          <h2 className="content-primary text-2xl mt-2">{INTRODUCTION_HEAD}</h2>
+          <h2 className="content-primary text-3xl mt-2 ">
+            {INTRODUCTION_HEAD}
+          </h2>
           <div className="text-2xl m-4 my-6 text-left">{INTRODUCTION_TEXT}</div>
         </Col>
       </Row>
