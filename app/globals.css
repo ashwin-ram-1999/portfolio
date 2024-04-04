@@ -20,6 +20,8 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .intro-head {
@@ -47,7 +49,7 @@ img {
 .antd-col {
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1500px) {
   .antd-card {
     width: 8rem;
     height: 8rem;

@@ -1,7 +1,7 @@
 "use client";
-import React, { ReactNode } from "react";
+import React from "react";
 import { Layout, Row, Col } from "antd";
-import { contentStyle, skillsStyle } from "../styles/styles";
+import { skillsStyle } from "../styles/styles";
 import {
   SKILLS_BACKEND,
   SKILLS_FRONTEND,

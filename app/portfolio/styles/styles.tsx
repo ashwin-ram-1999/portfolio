@@ -24,12 +24,12 @@ export const contentStyle: React.CSSProperties = {
 };
 
 export const skillsStyle: React.CSSProperties = {
-  textAlign: "center",
-  minHeight: "10vh",
-  lineHeight: 1.6,
-  color: "#000000",
-  backgroundColor: "#D2E9E9",
-  fontFamily: "Lato, sans-serif",
+  ...contentStyle,
+  padding: "1rem",
+};
+
+export const projectsStyle: React.CSSProperties = {
+  ...contentStyle,
   padding: "1rem",
 };
 
