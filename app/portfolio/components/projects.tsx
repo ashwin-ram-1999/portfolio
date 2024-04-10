@@ -21,7 +21,7 @@ const Projects: React.FC = () => (
   <Layout>
     <Content style={projectsStyle}>
       <p className="text-2xl">My Projects</p>
-      <div className="flex justify-around items-center gap-1">
+      <div className="flex justify-around items-center gap-1 mt-2">
         {PROJECT_DETAILS.map((project) => projectColumn(project.name, project))}
       </div>
     </Content>
