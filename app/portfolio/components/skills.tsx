@@ -14,7 +14,7 @@ const { Content } = Layout;
 
 const skillsColumn: any = (title: string, skills: object, span: number) => (
   <Col span={8} className="antd-col">
-    <Row gutter={[12, 16]}>
+    <Row gutter={[4, 16]}>
       <p className="text-2xl w-11/12 mt-1">{title}</p>
       {Object.entries(skills).map(([key, value]) => {
         return (

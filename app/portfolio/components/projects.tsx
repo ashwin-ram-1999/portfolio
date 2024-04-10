@@ -5,11 +5,12 @@ import { projectsStyle } from "../styles/styles";
 import { PROJECT_DETAILS, Project } from "../constants/constants";
 
 const { Content } = Layout;
+const { Meta } = Card;
 
 const projectColumn: any = (title: string, index: Project) => (
   <Col span={8}>
-    <Card title={title} bordered={false} hoverable>
-      <p className="text-base font-medium items-center min-h-16">
+    <Card title={title} bordered={false} hoverable type="inner">
+      <p className="text-base font-medium items-center min-h-16 justify-center items-center flex">
         {index["Tech Used"]}
       </p>
     </Card>
