@@ -9,7 +9,7 @@ export const SKILLS_FRONTEND: object = {
 
 export const SKILLS_BACKEND: object = {
   JAVA: "./icons/java-logo.svg",
-  SpringBoot: "./icons/spring-logo.svg",
+  "Spring Boot": "./icons/spring-logo.svg",
   "Node.JS": "./icons/nodejs-logo.svg",
   Express: "./icons/express-logo.svg",
 };
