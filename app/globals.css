@@ -10,6 +10,10 @@
   -webkit-background-clip: text;
 }
 
+.antd-card {
+  height: 8.2rem;
+}
+
 img {
   float: left;
   width: 8rem;
