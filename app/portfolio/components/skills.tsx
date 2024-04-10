@@ -9,17 +9,16 @@ import {
 } from "../constants/image-constants";
 import "../../globals.css";
 import { Card } from "antd";
-import { Flex } from "@/node_modules/antd/es/index";
 
 const { Content } = Layout;
 
-const skillsColumn: any = (title: string, skills: object) => (
+const skillsColumn: any = (title: string, skills: object, span: number) => (
   <Col span={8} className="antd-col">
     <Row gutter={[12, 16]}>
       <p className="text-2xl w-11/12 mt-1">{title}</p>
       {Object.entries(skills).map(([key, value]) => {
         return (
-          <Col span={8}>
+          <Col span={span}>
             <Card
               hoverable
               className="antd-card"
@@ -38,16 +37,11 @@ const Skills: React.FC = () => (
   <Layout>
     <Content style={skillsStyle}>
       <p className="text-3xl">My Skills</p>
-      <Flex
-        gap="middle"
-        align="center"
-        justify="
-      center"
-      >
-        {skillsColumn("Frontend", SKILLS_FRONTEND)}
-        {skillsColumn("Backend", SKILLS_BACKEND)}
-        {skillsColumn("Tools", SKILLS_TOOLS)}
-      </Flex>
+      <div className="flex justify-around items-center gap-1">
+        {skillsColumn("Frontend", SKILLS_FRONTEND, 8)}
+        {skillsColumn("Backend", SKILLS_BACKEND, 12)}
+        {skillsColumn("Tools", SKILLS_TOOLS, 12)}
+      </div>
     </Content>
   </Layout>
 );
