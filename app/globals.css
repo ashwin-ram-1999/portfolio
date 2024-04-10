@@ -23,9 +23,3 @@ img {
   padding: 0.4rem;
 }
 
-@media only screen and (max-width: 1500px) {
-  .antd-card {
-    width: 8rem;
-    height: 8rem;
-  }
-}
