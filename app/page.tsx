@@ -1,20 +1,37 @@
+"use client";
 import React from "react";
-import Layout from "./layout/Layout";
-import { INTRODUCTION_TEXT } from "./portfolio/constants/constants";
+import { Layout, Button } from "antd";
+import { headerStyle, footerStyle } from "./portfolio/styles/styles";
+import Intro from "./portfolio/components/intro";
+import Projects from "./portfolio/components/projects";
+import { DownloadOutlined } from "@ant-design/icons";
+import Skills from "./portfolio/components/skills";
 
-function Home() {
-  return (
-    <Layout>
-      <div className="flex flex-col items-center justify-center ">
-        <div className="text-gray-300 text-2xl m-4 w-3/4 my-6">
-          {INTRODUCTION_TEXT}
-        </div>
-        <div className="text-blue-300 text-4xl my-6 text-center">
-          My Experience
-        </div>
+const { Header, Footer, Content } = Layout;
+
+const App: React.FC = () => (
+  <Layout>
+    <Header style={headerStyle}>
+      <h1 className="intro-head">Welcome to my Digital Canvas!</h1>
+      <div className="justify-center items-center flex">
+        <Button
+          type="default"
+          icon={<DownloadOutlined />}
+          size={"middle"}
+          target="_blank"
+          href="https://flowcv.com/resume/e530o9kef5"
+        >
+          Download My Resume!
+        </Button>
       </div>
-    </Layout>
-  );
-}
+    </Header>
+    <Content>
+      <Intro />
+      <Skills />
+      <Projects />
+    </Content>
+    <Footer style={footerStyle}></Footer>
+  </Layout>
+);
 
-export default Home;
+export default App;
