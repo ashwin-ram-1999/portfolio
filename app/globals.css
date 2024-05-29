@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #000;
+}
+
 .intro-head {
   font-weight: 600;
   background-image: linear-gradient(45deg, #414141, #293d8d);
-  color: transparent;
+  color: #66fcf1;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -22,4 +26,3 @@ img {
   background-color: black;
   padding: 0.4rem;
 }
-

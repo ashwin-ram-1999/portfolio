@@ -1,7 +1,8 @@
 export const headerStyle: React.CSSProperties = {
-  color: "#000000",
+  color: "#66fcf1",
   height: 64,
-  backgroundColor: "#F8F6F4",
+  backgroundImage:
+    "linear-gradient(45deg, rgba(41,72,112,1) 33%, rgba(11,12,16,1) 71%)",
   position: "sticky",
   top: "0px",
   fontSize: "2.5rem",
@@ -13,13 +14,13 @@ export const headerStyle: React.CSSProperties = {
   fontFamily: "Lato, sans-serif",
   borderColor: "#000000",
 };
-
 export const contentStyle: React.CSSProperties = {
   textAlign: "center",
   minHeight: "10vh",
   lineHeight: 1.6,
-  color: "#000000",
-  backgroundColor: "#D2E9E9",
+  color: "#fff",
+  backgroundImage:
+    "linear-gradient(230deg, rgba(41,72,112,1) 29%, rgba(11,12,16,1) 72%)",
   fontFamily: "Lato, sans-serif",
 };
 
@@ -37,6 +38,7 @@ export const footerStyle: React.CSSProperties = {
   minHeight: "20vh",
   textAlign: "center",
   color: "#000000",
-  backgroundColor: "#E3F4F4",
+  backgroundImage:
+    "linear-gradient(230deg, rgba(41,72,112,1) 29%, rgba(11,12,16,1) 72%)",
   fontSize: "20px",
 };
